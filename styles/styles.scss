@@ -1,0 +1,259 @@
+// IMPORTS
+@import '../mediaQ/mediaQ.scss' ;
+
+html , body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    main {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        background-color: rgb(255, 255, 255);
+
+        @include mobile {
+            height: auto;
+        }
+
+        //NAV
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .nav-container {
+                width: 1100px;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: rgb(255, 255, 255);
+
+                @include mobile {
+                    width: 100%;
+                }
+
+                img {
+                    width: 140px;
+
+                    @include mobile {
+                        width: 100px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+        //FORM
+        form {
+            width: 420px;
+            height: 430px;
+            border-radius: 8px;
+            box-shadow: 0px 1px 4px rgb(187, 187, 187);
+            background-color: rgb(255, 255, 255);
+            margin: 220px auto 200px;
+
+            @include mobile {
+                margin: 130px auto 150px;
+            }
+
+            @include mobile2 {
+                background-color: white;
+                box-shadow: none;
+            }
+
+            @include form {
+                width: 90%;
+            }
+
+            h2 {
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                width: 86%;
+                font-size: 40px;
+                font-weight: 300;
+                margin: auto; 
+                padding: 20px;           
+            }
+
+            .inputs {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                input {
+                    width: 85%;
+                    height: 45px;
+                }
+
+                input:focus {
+                    outline: none;
+                    border: 2px solid rgb(51, 116, 255);
+                    border-radius: 4px;
+                }
+
+                input::placeholder {
+                    padding-left: 7px;
+                    font-size: 15px;
+                    transition: 0.1s;
+                }
+
+                input:focus::placeholder {
+                    font-size: 13px;
+                }
+            }
+
+            .info {
+                width: 85%;
+                margin: 40px auto;
+                background-color: rgb(255, 255, 255);
+                
+                p {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 100;
+                    font-size: 13px;
+                    word-spacing: 2px;
+                    color: rgb(155, 155, 155);
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 600;
+                        color: rgb(40, 92, 204);
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    height: 58px;
+                    border-radius: 30px;
+                    border: none;
+                    background-color: rgb(40, 92, 204);
+                    color: rgb(238, 238, 238);
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+
+                button:hover {
+                    background-color: rgb(16, 49, 121);
+                }
+
+                .signin {
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                    font-size: 15px;
+                    color: rgb(39, 39, 39);
+
+                    a {
+                        color: rgb(40, 92, 204);
+                        font-weight: 100;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        //FOOTER
+        footer {
+            width: 100%;
+            height: 50px;
+            margin: auto 0 0;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: center;
+
+            @include mobile {
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer-content {
+                width: 1100px;
+                display: flex;
+                align-items: center;
+
+                @include mobile {
+                    width: 100%;
+                    justify-content: center;
+                }
+
+
+                .footer-1 {
+                    width: 550px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-right: 10px;
+                    gap: 15px;
+
+                    @include mobile {
+                        width: 40%;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: flex-start;
+                    }
+                    
+                    img {
+                        width: 60px;
+                        filter: hue-rotate(0deg) brightness(0%);
+
+                        @include mobile {
+                            margin-bottom: -20px;
+                        }
+                    }
+
+                    p {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: rgb(122, 122, 122);
+                    }
+
+                    a {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: rgb(122, 122, 122);
+                    }
+                }
+    
+                .footer-2 {
+                    width: 550px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 15px;
+
+                    @include mobile {
+                        width: 30%;
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+
+                    a {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 12px;
+                        text-decoration: none;
+                        color: rgb(122, 122, 122);
+                    }
+                }
+            }
+        }
+    }
+}

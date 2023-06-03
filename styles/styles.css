@@ -1,0 +1,244 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html main, body main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1100px) {
+  html main, body main {
+    height: auto;
+  }
+}
+html main nav, body main nav {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html main nav .nav-container, body main nav .nav-container {
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1100px) {
+  html main nav .nav-container, body main nav .nav-container {
+    width: 100%;
+  }
+}
+html main nav .nav-container img, body main nav .nav-container img {
+  width: 140px;
+}
+@media screen and (max-width: 1100px) {
+  html main nav .nav-container img, body main nav .nav-container img {
+    width: 100px;
+    margin-left: 15px;
+  }
+}
+html main form, body main form {
+  width: 420px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px rgb(187, 187, 187);
+  background-color: rgb(255, 255, 255);
+  margin: 220px auto 200px;
+}
+@media screen and (max-width: 1100px) {
+  html main form, body main form {
+    margin: 130px auto 150px;
+  }
+}
+@media screen and (max-width: 750px) {
+  html main form, body main form {
+    background-color: white;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  html main form, body main form {
+    width: 90%;
+  }
+}
+html main form h2, body main form h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 86%;
+  font-size: 40px;
+  font-weight: 300;
+  margin: auto;
+  padding: 20px;
+}
+html main form .inputs, body main form .inputs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+html main form .inputs input, body main form .inputs input {
+  width: 85%;
+  height: 45px;
+}
+html main form .inputs input:focus, body main form .inputs input:focus {
+  outline: none;
+  border: 2px solid rgb(51, 116, 255);
+  border-radius: 4px;
+}
+html main form .inputs input::-moz-placeholder, body main form .inputs input::-moz-placeholder {
+  padding-left: 7px;
+  font-size: 15px;
+  -moz-transition: 0.1s;
+  transition: 0.1s;
+}
+html main form .inputs input::placeholder, body main form .inputs input::placeholder {
+  padding-left: 7px;
+  font-size: 15px;
+  transition: 0.1s;
+}
+html main form .inputs input:focus::-moz-placeholder, body main form .inputs input:focus::-moz-placeholder {
+  font-size: 13px;
+}
+html main form .inputs input:focus::placeholder, body main form .inputs input:focus::placeholder {
+  font-size: 13px;
+}
+html main form .info, body main form .info {
+  width: 85%;
+  margin: 40px auto;
+  background-color: rgb(255, 255, 255);
+}
+html main form .info p, body main form .info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  word-spacing: 2px;
+  color: rgb(155, 155, 155);
+}
+html main form .info p a, body main form .info p a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(40, 92, 204);
+}
+html main form .info p a:hover, body main form .info p a:hover {
+  text-decoration: underline;
+}
+html main form .info button, body main form .info button {
+  width: 100%;
+  height: 58px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(40, 92, 204);
+  color: rgb(238, 238, 238);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+html main form .info button:hover, body main form .info button:hover {
+  background-color: rgb(16, 49, 121);
+}
+html main form .info .signin, body main form .info .signin {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(39, 39, 39);
+}
+html main form .info .signin a, body main form .info .signin a {
+  color: rgb(40, 92, 204);
+  font-weight: 100;
+}
+html main form .info .signin a:hover, body main form .info .signin a:hover {
+  text-decoration: underline;
+}
+html main footer, body main footer {
+  width: 100%;
+  height: 50px;
+  margin: auto 0 0;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1100px) {
+  html main footer, body main footer {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+html main footer .footer-content, body main footer .footer-content {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  html main footer .footer-content, body main footer .footer-content {
+    width: 100%;
+    justify-content: center;
+  }
+}
+html main footer .footer-content .footer-1, body main footer .footer-content .footer-1 {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+  gap: 15px;
+}
+@media screen and (max-width: 1100px) {
+  html main footer .footer-content .footer-1, body main footer .footer-content .footer-1 {
+    width: 40%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+  }
+}
+html main footer .footer-content .footer-1 img, body main footer .footer-content .footer-1 img {
+  width: 60px;
+  filter: hue-rotate(0deg) brightness(0%);
+}
+@media screen and (max-width: 1100px) {
+  html main footer .footer-content .footer-1 img, body main footer .footer-content .footer-1 img {
+    margin-bottom: -20px;
+  }
+}
+html main footer .footer-content .footer-1 p, body main footer .footer-content .footer-1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(122, 122, 122);
+}
+html main footer .footer-content .footer-1 a, body main footer .footer-content .footer-1 a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(122, 122, 122);
+}
+html main footer .footer-content .footer-2, body main footer .footer-content .footer-2 {
+  width: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+@media screen and (max-width: 1100px) {
+  html main footer .footer-content .footer-2, body main footer .footer-content .footer-2 {
+    width: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+html main footer .footer-content .footer-2 a, body main footer .footer-content .footer-2 a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(122, 122, 122);
+}/*# sourceMappingURL=styles.css.map */
